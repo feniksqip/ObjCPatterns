@@ -15,6 +15,11 @@
 		5569434D1C78B39F0069B7B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5569434B1C78B39F0069B7B8 /* LaunchScreen.storyboard */; };
 		556943581C78B39F0069B7B8 /* ObjCPatternsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556943571C78B39F0069B7B8 /* ObjCPatternsTests.m */; };
 		556943631C78B39F0069B7B8 /* ObjCPatternsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556943621C78B39F0069B7B8 /* ObjCPatternsUITests.m */; };
+		556943731C78B5EA0069B7B8 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 556943721C78B5EA0069B7B8 /* HTTPClient.m */; };
+		556943761C78B6E80069B7B8 /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = 556943751C78B6E80069B7B8 /* Album.m */; };
+		556943791C78B7660069B7B8 /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 556943781C78B7660069B7B8 /* AlbumView.m */; };
+		5569437F1C78BE9C0069B7B8 /* LibraryAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 5569437E1C78BE9C0069B7B8 /* LibraryAPI.m */; };
+		556943821C78BF460069B7B8 /* PersistencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 556943811C78BF460069B7B8 /* PersistencyManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		5569435E1C78B39F0069B7B8 /* ObjCPatternsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjCPatternsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		556943621C78B39F0069B7B8 /* ObjCPatternsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCPatternsUITests.m; sourceTree = "<group>"; };
 		556943641C78B39F0069B7B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556943711C78B5EA0069B7B8 /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
+		556943721C78B5EA0069B7B8 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		556943741C78B6E80069B7B8 /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		556943751C78B6E80069B7B8 /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		556943771C78B7660069B7B8 /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
+		556943781C78B7660069B7B8 /* AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
+		5569437D1C78BE9C0069B7B8 /* LibraryAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryAPI.h; sourceTree = "<group>"; };
+		5569437E1C78BE9C0069B7B8 /* LibraryAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryAPI.m; sourceTree = "<group>"; };
+		556943801C78BF460069B7B8 /* PersistencyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistencyManager.h; sourceTree = "<group>"; };
+		556943811C78BF460069B7B8 /* PersistencyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistencyManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +116,10 @@
 		5569433C1C78B39F0069B7B8 /* ObjCPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				556943431C78B39F0069B7B8 /* ViewController.h */,
-				556943441C78B39F0069B7B8 /* ViewController.m */,
+				5569437A1C78BD720069B7B8 /* Model */,
+				5569437B1C78BD780069B7B8 /* View */,
+				5569437C1C78BD7D0069B7B8 /* Controller */,
+				556943701C78B5BD0069B7B8 /* API */,
 				556943461C78B39F0069B7B8 /* Main.storyboard */,
 				5569433D1C78B39F0069B7B8 /* Supporting Files */,
 			);
@@ -138,6 +155,46 @@
 				556943641C78B39F0069B7B8 /* Info.plist */,
 			);
 			path = ObjCPatternsUITests;
+			sourceTree = "<group>";
+		};
+		556943701C78B5BD0069B7B8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				556943711C78B5EA0069B7B8 /* HTTPClient.h */,
+				556943721C78B5EA0069B7B8 /* HTTPClient.m */,
+				5569437D1C78BE9C0069B7B8 /* LibraryAPI.h */,
+				5569437E1C78BE9C0069B7B8 /* LibraryAPI.m */,
+				556943801C78BF460069B7B8 /* PersistencyManager.h */,
+				556943811C78BF460069B7B8 /* PersistencyManager.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		5569437A1C78BD720069B7B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				556943741C78B6E80069B7B8 /* Album.h */,
+				556943751C78B6E80069B7B8 /* Album.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5569437B1C78BD780069B7B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				556943771C78B7660069B7B8 /* AlbumView.h */,
+				556943781C78B7660069B7B8 /* AlbumView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5569437C1C78BD7D0069B7B8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				556943431C78B39F0069B7B8 /* ViewController.h */,
+				556943441C78B39F0069B7B8 /* ViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +329,11 @@
 			files = (
 				556943451C78B39F0069B7B8 /* ViewController.m in Sources */,
 				556943421C78B39F0069B7B8 /* AppDelegate.m in Sources */,
+				556943791C78B7660069B7B8 /* AlbumView.m in Sources */,
+				556943821C78BF460069B7B8 /* PersistencyManager.m in Sources */,
+				5569437F1C78BE9C0069B7B8 /* LibraryAPI.m in Sources */,
+				556943731C78B5EA0069B7B8 /* HTTPClient.m in Sources */,
+				556943761C78B6E80069B7B8 /* Album.m in Sources */,
 				5569433F1C78B39F0069B7B8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
