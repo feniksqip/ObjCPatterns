@@ -101,14 +101,9 @@
 		5569433C1C78B39F0069B7B8 /* ObjCPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				556943401C78B39F0069B7B8 /* AppDelegate.h */,
-				556943411C78B39F0069B7B8 /* AppDelegate.m */,
 				556943431C78B39F0069B7B8 /* ViewController.h */,
 				556943441C78B39F0069B7B8 /* ViewController.m */,
 				556943461C78B39F0069B7B8 /* Main.storyboard */,
-				556943491C78B39F0069B7B8 /* Assets.xcassets */,
-				5569434B1C78B39F0069B7B8 /* LaunchScreen.storyboard */,
-				5569434E1C78B39F0069B7B8 /* Info.plist */,
 				5569433D1C78B39F0069B7B8 /* Supporting Files */,
 			);
 			path = ObjCPatterns;
@@ -117,6 +112,11 @@
 		5569433D1C78B39F0069B7B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				556943491C78B39F0069B7B8 /* Assets.xcassets */,
+				5569434B1C78B39F0069B7B8 /* LaunchScreen.storyboard */,
+				5569434E1C78B39F0069B7B8 /* Info.plist */,
+				556943401C78B39F0069B7B8 /* AppDelegate.h */,
+				556943411C78B39F0069B7B8 /* AppDelegate.m */,
 				5569433E1C78B39F0069B7B8 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -414,6 +414,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ObjCPatterns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = andreyb.com.ObjCPatterns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ObjCPatterns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = andreyb.com.ObjCPatterns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
